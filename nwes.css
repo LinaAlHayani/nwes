@@ -1,0 +1,184 @@
+@import url("C:\Users\modern tech\OneDrive\سطح المكتب\nwes");
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --primary-text-color:#5f9ea0;
+    --secondary-text-color:#284c4e;
+    --accent-color:#4c5555;
+    --accent-color-dark:hwb(183 16% 69%);
+    --padding-inline-section:20px;
+    --bg-color:#000;
+    
+
+    
+}
+body{
+    font-family: "Poppins",sans-serif;
+    background-color:var(--bg-color);
+    color:aliceblue;
+}
+.h3,h6{
+    color: var(--accent-color);
+}
+p{
+    font-family:"Roboto",sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+a{
+    text-decoration:double;
+    color:#4c5555 ;
+}
+switch{
+    display: none;
+}
+.slider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: antiquewhite;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.slider::before{
+    position:absolute;
+    content:"";
+    height: 25px;
+    width: 25px;
+    left: 2px;
+    bottom: 2px;
+    background-color: antiquewhite;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+.input:checked +.slider::before{
+    transform: translateX(26px);
+}
+ul{
+    font-family: source_sans_prosemibold, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    color: #333;
+    font-size: 14px;
+    line-height: 34px;
+    padding: 0;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    letter-spacing: 0.18px;
+    width:max-content;
+}
+.flex{
+    display: flex;
+    align-items:center;
+}
+.container{
+    max-width: 1180px;
+    margin-inline: auto;
+    overflow:auto;
+}
+nav{
+    background-color: #284c4e;
+    box-shadow: 0 0 4px #282a2a;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    left:0 ;
+    right:0 ;
+}
+.main-nav{
+    justify-content: space-between;
+    padding-block: 8px  ;
+
+}
+.nwes logo{
+    width: 120px;
+
+}
+.nav-links{
+    gap:160px ;
+}
+.hover-link {
+    cursor:pointer ;
+}
+.hover-link:hover{
+    color:aliceblue;
+}
+.hover-link:active{
+    color:aliceblue;
+}
+.space{
+    height: 300px;
+    width: 300px;
+}
+.search-bar{
+    height: 30px;
+    gap:9px ;
+}
+.nwes-input{
+    width: 200px;
+    height: 100%;
+    padding-block: 12px;
+    border-radius:4px ;
+    border: 2px solid #5f9ea0;
+    font-family:"Roboto",sans-serif;
+}
+.search-button{
+    background-color: var(--accent-color);
+    color: aliceblue;
+    padding:8px 2px ;
+    border:none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-button:hover{
+    background-color:var(--primary-text-color) ;
+}
+.maim{
+    padding-block: 200px;
+    margin-top:30px  ;
+}
+.cards-container{
+    justify-content:space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items:start;
+}
+.cards{
+    width: 360px;
+    min-height: 20px;
+    box-shadow: 0 0 4px #4c5555;
+    border-radius: 4px;
+    background-color: antiquewhite;
+    cursor: pointer;
+    overflow:visible;
+}
+.cards:hover{
+    box-shadow: 1px 1px 8px #333;
+    background-color: #6e7575;
+    transform: translateY(-2px);
+}
+.cards-header img{
+    width: 100px;
+    height: 180px;
+    object-fit: cover;
+}
+.cards-contet{
+    padding: 12px;
+}
+.nwes-source{
+    margin-block:12px ;
+}
+.space{
+    height: 5px;
+    width: 200px;
+    margin: 100px;
+}
+#n
